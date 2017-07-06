@@ -1,0 +1,9 @@
+dist: trusty
+language: node_js
+node_js:
+ - "8.0"
+
+script:
+  - npm i
+  - npm run lint
+  - npm t
