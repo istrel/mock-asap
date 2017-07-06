@@ -23,7 +23,7 @@ function testAsync(fnThatReturnsPromise) {
             .then(done)
             .catch(done.fail);
     };
-};
+}
 
 describe('Mock ASAP', function() {
     beforeAll(function(done) {
@@ -101,7 +101,6 @@ describe('Mock ASAP', function() {
                 await this.nightmare
                     .goto('http://127.0.0.1:8080/respondWith.html')
                     .wait('#result');
-
 
                 const text = await this.nightmare.evaluate(() => document.querySelector('#result').textContent);
 

@@ -120,6 +120,6 @@ module.exports = {
         'one-var-declaration-per-line': [2, 'always']
     },
     parserOptions: {
-        ecmaVersion: 6
+        ecmaVersion: 2017
     }
 };
